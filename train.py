@@ -20,5 +20,5 @@ W, Z = image_preloader(target_path='./validate',
                        normalize=True)
 W = np.reshape(W, (-1, 100, 100, 3))
 
-model.fit(X, Y, n_epoch=50, validation_set=(W,Z), show_metric=True)
+model.fit(X, Y, n_epoch=500, validation_set=(W,Z), show_metric=True)
 model.save('./ZtrainedNet/final-model.tfl')
